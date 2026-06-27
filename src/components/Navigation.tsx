@@ -1,4 +1,4 @@
-import navLinks from "../../constants/index.ts";
+import {navLinks} from "../../constants";
 
 const Navigation = () => {
     return (
@@ -10,7 +10,7 @@ const Navigation = () => {
             <ul className="flex flex-col md:flex-row items-center gap-10">
                 {navLinks.map ((link) => (
                     <li key={link.id}>
-                        <a href={link.id}>
+                        <a href={link.id} className="hover:opacity-75">
                             {link.title}
                         </a>
                     </li>
