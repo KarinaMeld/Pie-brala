@@ -2,7 +2,7 @@ import {socials} from "../../constants";
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-white fixed bottom-0 w-full flex flex-col items-center py-10 gap-5">
+        <footer className="bottom-0 w-full flex flex-col items-center py-10 gap-5">
             <p>
                 "Pie Brāļa" Krogs | Restorāns
             </p>

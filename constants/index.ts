@@ -36,4 +36,13 @@ const socials = [
     }
 ]
 
-export {navLinks, socials};
+const contacts = {
+    address: "Siguldas šoseja, Ropažu novads, Vangaži \"Valteri\"",
+    email: "bralis2011@inbox.lv",
+    phoneReservations: "+371 67 995 015",
+    phoneBanquets: "+371 29 414 000",
+    phoneBanquets2: "+371 29 223 087",
+    gps: "57.089862, 24.557576"
+}
+
+export {navLinks, socials, contacts};

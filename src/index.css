@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
-@font-face {
-    font-family: 'Montserrat';
-}
-
 @theme{
-    //
 }
 
 html, body{
@@ -15,4 +10,27 @@ html, body{
     color: white;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+nav, footer {
+    font-family: "Quicksand", sans-serif;
+}
+
+@layer base{
+    main {
+        @apply w-full overflow-x-hidden;
+    }
+
+    h1{
+        @apply text-9xl;
+    }
+
+    h2{
+        @apply text-3xl;
+    }
+
+    .playground-image{
+        @apply h-48 w-80 object-cover rounded-md opacity-80;
+    }
 }
