@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Quicksand:wght@300..700&display=swap');
 @import "tailwindcss";
 
 @theme{
@@ -17,9 +17,19 @@ nav, footer {
     font-family: "Quicksand", sans-serif;
 }
 
+h1 {
+    font-family: "Cinzel", serif;
+}
+
 @layer base{
     main {
         @apply w-full overflow-x-hidden;
+    }
+
+    nav{
+        a, p {
+            @apply tracking-widest;
+        }
     }
 
     h1{
@@ -31,6 +41,6 @@ nav, footer {
     }
 
     .playground-image{
-        @apply h-48 w-80 object-cover rounded-md opacity-80;
+        @apply mx-auto h-48 w-80 object-cover rounded-md opacity-80;
     }
 }

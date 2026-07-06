@@ -2,7 +2,7 @@ import {contacts} from "../../constants";
 
 const Contacts = () => {
     return (
-        <div className="container mx-auto" id="contacts">
+        <div className="container mx-auto mb-20" id="contacts">
             <h2 className="text-4xl">
                 Sazinies ar mums
             </h2>
