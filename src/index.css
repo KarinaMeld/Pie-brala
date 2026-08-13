@@ -53,12 +53,12 @@ h1 {
         @apply mx-auto h-48 w-80 object-cover rounded-md opacity-80;
     }
 
-    .menu-image{
-        @apply mx-auto aspect-4/3 object-cover rounded-md opacity-80 group-hover:opacity-100;
+    .menu-link{
+        @apply flex-6 border-2 border-amber-100 rounded-md flex justify-center items-center min-h-96 max-h-[40vh] bg-[#453b2b4d];
     }
 
     .menu-title{
-        @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+        @apply p-20;
     }
 
     .contacts-p {
