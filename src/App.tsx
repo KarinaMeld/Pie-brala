@@ -5,6 +5,7 @@ import gsap from "gsap";
 
 import Navigation from './components/Navigation'
 import Hero from "./components/Hero.tsx";
+import Menu from "./components/Menu.tsx";
 import Playground from "./components/Playground.tsx";
 import Contacts from "./components/Contacts.tsx";
 import Footer from "./components/Footer.tsx";
@@ -12,7 +13,7 @@ import Footer from "./components/Footer.tsx";
 gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
 
 function App() {
-    const bgRef = useRef<HTMLDivElement>(null);
+    const bgRef = useRef<HTMLImageElement>(null);
 
     useGSAP(() => {
         gsap.to(bgRef.current, {
@@ -22,20 +23,23 @@ function App() {
                 trigger: document.body,
                 start: "top top",
                 end: "bottom bottom",
-                scrub: true,
+                scrub: 1,
             },
         });
     });
 
     return (
         <div className="relative flex flex-col">
-            <div
+            <img
                 ref={bgRef}
-                className="fixed left-0 top-0 w-full h-[130%] -z-10 bg-cover bg-bottom will-change-transform"
-                style={{ backgroundImage: "url('/tree.jpg')" }}
+                src="/tree.jpg"
+                alt=""
+                aria-hidden="true"
+                className="fixed left-0 top-0 w-full h-[130%] -z-10 object-cover object-bottom will-change-transform"
             />
             <Navigation />
             <Hero />
+            <Menu />
             <Playground />
             <Contacts />
             <Footer />

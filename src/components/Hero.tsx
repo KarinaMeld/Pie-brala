@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className="flex flex-col items-center justify-center h-screen mb-20">
+        <div className="section">
             <div className="absolute text-center">
                 <h1 className="text-9xl pb-10">
                     Pie brāļa

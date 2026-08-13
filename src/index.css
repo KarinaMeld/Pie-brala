@@ -6,7 +6,8 @@
 
 html, body{
     width: 100%;
-    color: white;
+    color: #d5c7b5;
+    background-color: rgb(42 37 35 / 0.75);
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Cormorant Garamond', serif;
@@ -18,6 +19,7 @@ nav, footer {
 
 h1 {
     font-family: "Cinzel", serif;
+    font-weight: bold;
 }
 
 @layer base{
@@ -31,15 +33,35 @@ h1 {
         }
     }
 
+    .section{
+        @apply min-h-[80vh] container mx-auto mb-20 flex flex-col items-center justify-center;
+    }
+
     h1{
         @apply text-9xl;
     }
 
     h2{
-        @apply text-3xl;
+        @apply text-5xl;
+    }
+
+    h3{
+        @apply text-4xl;
     }
 
     .playground-image{
         @apply mx-auto h-48 w-80 object-cover rounded-md opacity-80;
+    }
+
+    .menu-image{
+        @apply mx-auto aspect-4/3 object-cover rounded-md opacity-80 group-hover:opacity-100;
+    }
+
+    .menu-title{
+        @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+
+    .contacts-p {
+        @apply text-xl;
     }
 }
